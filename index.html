@@ -60,7 +60,44 @@
 				<h1>Past Projects</h1>
 			</div>
 			
+			
 			<div class="sectionContent">
+				
+				<article>
+					<h2>Music Recommendation using KNN algorithm based on key features of songs</h2>
+					<p class="subDetails"></p>
+					<p>Found a dataset of Kaggle with features of around a million songs from the past 100 years, 
+					the given features of each song seemed good metrics for similarity of songs, decided to implement a multi-stage network to output L nearest songs to the user inputted 
+					songs</p>
+					<li><a href="https://www.kaggle.com/arpantripathi20/music-recommender-clustering-into-genres">Kaggle Notebook</a></li>
+					<p></p>
+				</article>
+				
+				<article>
+					<h2>Converting random noise into an image using a pretrained Neural Network</h2>
+					<p class="subDetails"></p>
+					<p> Most available pretrained neural networks were trained on 1000 classes of ImageNet dataset, the pretrained weights can be used to
+					convert gaussian noise into one of the 1000 images classes by maximizing first Classifier layer with respect to target output neuron(Gradient
+					Ascent), then maximizing the input image with respect to the first Classifier layer (Feature Inversion) </p>
+					<li><a href="https://www.kaggle.com/arpantripathi20/image-generation-by-grad-ascen-feature-inversion">Kaggle Notebook with PyTorch</a></li>
+					<p></p>
+				</article>
+				
+				<article>
+					<h2>Facial Keypoint mapping using MobileNetv2 feature extractor</h2>
+					<p class="subDetails"></p>
+					<p> Even though MobileNetv2 was trained on ImageNet dataset, the convolutional filters of the pretrained network can be used to extract representational features,
+					even for faces, given the availability of enough training/val data to train a regressor for mapping the activations of final convolutional filters onto keypoint features
+					of faces.</p>
+					<p> The model is comparatively small in size (~15 MB, as compared to ~500 MB sized VGG-16 network) but performs really well on validation set. 
+					Pairing this model with haarcascade_face in OpenCV to first detect faces in order to mark keypoint features works well with limited number
+					of faces </p>
+					<li><a href="https://github.com/tripathiarpan20/Facial-Keypoints-recognition-using-Transfer-Learning">Github Repository</a></li>
+					<li><a href="https://github.com/tripathiarpan20/Facial-Keypoints-recognition-using-Transfer-Learning/blob/master/webcam_v1.py">Webcam module using OpenCV</a></li>
+					<li><a href="https://colab.research.google.com/github/tripathiarpan20/Facial-Keypoints-recognition-using-Transfer-Learning/blob/master/facial_keypoints_colab.ipynb">Colab Notebook</a></li>
+					<p></p>
+				</article>
+				
 				<article>
 					<h2>Fall warning device using Arduino Uno for Elders/Patients</h2>
 					<p class="subDetails">Semester I</p>
@@ -96,64 +133,16 @@
 			</div>
 			
 			<div class="sectionContent">
-				
 				<article>
-					<h2>Facial Keypoint mapping using MobileNetv2 feature extractor</h2>
+					<h2>Unsupervised localisation and counting of fruits in the field</h2>
 					<p class="subDetails"></p>
-					<p> Even though MobileNetv2 was trained on ImageNet dataset, the convolutional filters of the pretrained network can be used to extract representational features,
-					even for faces, given the availability of enough training/val data to train a regressor for mapping the activations of final convolutional filters onto keypoint features
-					of faces.</p>
-					<p> The model is comparatively small in size (~15 MB, as compared to ~500 MB sized VGG-16 network) but performs really well on validation set. 
-					Pairing this model with haarcascade_face in OpenCV to first detect faces in order to mark keypoint features works well with limited number
-					of faces </p>
-					<li><a href="https://github.com/tripathiarpan20/Facial-Keypoints-recognition-using-Transfer-Learning">Github Repository</a></li>
-					<li><a href="https://github.com/tripathiarpan20/Facial-Keypoints-recognition-using-Transfer-Learning/blob/master/webcam_v1.py">Webcam module using OpenCV</a></li>
-					<li><a href="https://colab.research.google.com/github/tripathiarpan20/Facial-Keypoints-recognition-using-Transfer-Learning/blob/master/facial_keypoints_colab.ipynb">Colab Notebook</a></li>
-					<p></p>
-				</article>
-				
-				
-				
-				<article>
-					<h2>Neural Style Transfer implementation in Keras</h2>
-					<p class="subDetails"></p>
-					<p> In a pretrained network, the activations of layers capture properties of the image, with increasing complexity in deeper layers, such
-					activation pattern capture the 'content' of the image and the covariance matrix of particular layers by two images capture similarity in
-					'style' of these images, optimization of one image with respect to the weighted sum of these two objectives can project the style of one
-					image onto the other</p>
+					<p> Currently working under the supervision of 
+						<a href="https://nmrinl.github.io/">Dr.Das</a> and 
+						<a href="https://sites.google.com/iitpkd.ac.in/sahelybhadra/home">Dr.Bhadra</a> in a collaborative project with IITB </p>
 					<li><a href="https://github.com/tripathiarpan20/Neural_Style_Transfer/blob/master/Neural%20Style%20Transfer.ipynb">Notebook on Github</a></li>
 					<p></p>
 				</article>
 				
-				
-				<article>
-					<h2>Converting random noise into an image using a pretrained Neural Network</h2>
-					<p class="subDetails"></p>
-					<p> Most available pretrained neural networks were trained on 1000 classes of ImageNet dataset, the pretrained weights can be used to
-					convert gaussian noise into one of the 1000 images classes by maximizing first Classifier layer with respect to target output neuron(Gradient
-					Ascent), then maximizing the input image with respect to the first Classifier layer (Feature Inversion) </p>
-					<li><a href="https://www.kaggle.com/arpantripathi20/image-generation-by-grad-ascen-feature-inversion">Kaggle Notebook with PyTorch</a></li>
-					<p></p>
-				</article>
-				
-				<article>
-					<h2> Image Data Augmentation in Keras</h2>
-					<p class="subDetails"></p>
-					<p> Simple methods of augmentation training/eval data in order to get a more flexible model while compensating for limited availability 
-					of training/eval data</p>
-					<li><a href="https://github.com/tripathiarpan20/Data_Augmentation/blob/master/Data_Augmentation_with_Keras.ipynb">Notebook on Github</a></li>
-					<p></p>
-				</article>
-				
-				<article>
-					<h2>Music Recommendation using KNN algorithm based on key features of songs</h2>
-					<p class="subDetails"></p>
-					<p>Found a dataset of Kaggle with features of around a million songs from the past 100 years, 
-					the given features of each song seemed good metrics for similarity of songs, decided to implement a multi-stage network to output L nearest songs to the user inputted 
-					songs</p>
-					<li><a href="https://www.kaggle.com/arpantripathi20/music-recommender-clustering-into-genres">Kaggle Notebook</a></li>
-					<p></p>
-				</article>
 			</div>
 			<div class="clear"></div>
 		</section>
@@ -245,7 +234,7 @@
 					<h2>College/IIT Palakkad</h2>
 					<p class="subDetails">Bachelor of Technology</p>
 					<p>I secured a rank of 4924 in JEE Advanced 2018, leading to my selection in the Computer Science branch of IIT Palakkad, since then, I have been pursuing a Computer Science degree.</p>
-					<h3><b>Current CGPA: 8 </b></h3>
+					<h3><b>Current CGPA: 7.94 </b></h3>
 				</article>
 			</div>
 			<div class="clear"></div>
